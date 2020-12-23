@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
 import AboutTitle from "../../Screens/About/AboutTitle/AboutTitle";
 import AboutContent from "../../Screens/About/AboutContent/AboutContent";
+import "../AboutContainer/AboutContainer.css";
 
 function AboutContainer(props) {
   const [visible, setVisible] = useState({
@@ -30,7 +31,7 @@ function AboutContainer(props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="container about" id="about-container">
+    <div className="container" id="about-container">
       <div className="about-container-title" ref={refA}>
         <AboutTitle visible={visible.title} />
       </div>

@@ -53,6 +53,19 @@ html {
   display: none;
 }
 
+.title {
+  position: relative;
+  top: 10%;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.transition {
+  top: 0;
+  opacity: 100;
+}
+
 @media only screen and (min-width: 1000px) {
   .container {
     height: 100vh;

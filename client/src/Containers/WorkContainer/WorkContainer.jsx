@@ -1,4 +1,7 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
+import WorkTitle from "../../Screens/Work/WorkTitle/WorkTitle";
+import WorkContent from "../../Screens/Work/WorkContent/WorkContent";
+import "../WorkContainer/WorkContainer.css";
 
 function WorkContainer(props) {
   const [visible, setVisible] = useState({
@@ -29,11 +32,11 @@ function WorkContainer(props) {
   }, []);
 
   return (
-    <div className="work-container" id="work-container">
-      <div className="work-title" ref={refA}>
+    <div className="work container" id="work-container">
+      <div className="work-container-title" ref={refA}>
         <WorkTitle visible={visible.title} />
       </div>
-      <div className="work-content" ref={refB}>
+      <div className="work-container-content" ref={refB}>
         <WorkContent visible={visible.content} />
       </div>
     </div>

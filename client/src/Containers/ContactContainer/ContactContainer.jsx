@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
 import ContactTitle from "../../Screens/Contact/ContactTitle/ContactTitle";
 import ContactContent from "../../Screens/Contact/ContactContent/ContactContent";
+import "../ContactContainer/ContactContainer.css";
 
 function ContactContainer(props) {
   const [visible, setVisible] = useState({
@@ -30,11 +31,11 @@ function ContactContainer(props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="contact-container" id="contact-container">
-      <div className="contact-title" ref={refA}>
+    <div className="container" id="contact-container">
+      <div className="contact-container-title" ref={refA}>
         <ContactTitle visible={visible.title} />
       </div>
-      <div className="contact-content" ref={refB}>
+      <div className="contact-container-content" ref={refB}>
         <ContactContent visible={visible.content} />
       </div>
     </div>
