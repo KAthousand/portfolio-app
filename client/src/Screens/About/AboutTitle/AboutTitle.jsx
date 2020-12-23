@@ -1,13 +1,12 @@
 import React from "react";
 import "../AboutTitle/AboutTitle.css";
+import PhotoCard from "../../../Components/PhotoCard/PhotoCard";
 
 function AboutTitle(props) {
   const { visible } = props;
   return (
     <div className="screen">
-      <div className={visible ? "title transition" : "title"}>
-        <h1>About Title</h1>
-      </div>
+      <PhotoCard visible={visible} />
     </div>
   );
 }

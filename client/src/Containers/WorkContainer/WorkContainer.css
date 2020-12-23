@@ -2,3 +2,18 @@
 .work-container-content {
   width: 100%;
 }
+
+.work-container-title {
+  background-color: var(--color-dark);
+}
+
+.work-container-content {
+}
+
+/* .work-content {
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+} */

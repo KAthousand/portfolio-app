@@ -11,28 +11,40 @@ function Nav(props) {
   return (
     <>
       <div className={fullNav ? "nav-full open-nav" : "nav-full"}>
-        <div className={fullNav ? "nav-full-link open-link" : "nav-full-link"}>
-          <h3>
-            <a href="#home" onClick={() => setFullNav(!fullNav)}>
-              Home
-            </a>
-          </h3>
-          <h3>
-            <a href="#about" onClick={() => setFullNav(!fullNav)}>
-              About
-            </a>
-          </h3>
-          <h3>
-            <a href="#work" onClick={() => setFullNav(!fullNav)}>
-              Work
-            </a>
-          </h3>
-          <h3>
-            <a href="#contact" onClick={() => setFullNav(!fullNav)}>
-              Contact
-            </a>
-          </h3>
-        </div>
+        <ul
+          className={
+            fullNav ? "nav-full-link open-link" : "nav-full-link close-link"
+          }
+        >
+          <li>
+            <h3>
+              <a href="#title-container" onClick={() => setFullNav(!fullNav)}>
+                Home
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="#about-container" onClick={() => setFullNav(!fullNav)}>
+                About
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="#work-container" onClick={() => setFullNav(!fullNav)}>
+                Work
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="#contact-container" onClick={() => setFullNav(!fullNav)}>
+                Contact
+              </a>
+            </h3>
+          </li>
+        </ul>
       </div>
       <div className={mount ? "nav-container nav-transition" : "nav-container"}>
         <button

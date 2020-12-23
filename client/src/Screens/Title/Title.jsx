@@ -14,7 +14,7 @@ function Title(props) {
       </div>
       <div className="title-illustration-background">
         <div className="title-background-img">
-          <div className={visible ? "logo transition" : "logo"}></div>
+          <div className={visible ? "logo logo-transition" : "logo"}></div>
         </div>
       </div>
       <div className="title-border">

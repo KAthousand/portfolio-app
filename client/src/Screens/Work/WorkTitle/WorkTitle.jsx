@@ -5,9 +5,13 @@ function WorkTitle(props) {
   const { visible } = props;
   return (
     <div className="screen">
-      <div className={visible ? "title transition" : "title"}>
-        <h1>Work Title</h1>
-      </div>
+      <div
+        className={
+          visible
+            ? "work-title-content work-title-transition"
+            : "work-title-content"
+        }
+      ></div>
     </div>
   );
 }

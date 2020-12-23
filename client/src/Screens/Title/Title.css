@@ -39,6 +39,11 @@
   transition-timing-function: ease-in-out, cubic-bezier(0.82, 0.01, 0.77, 0.78);
 }
 
+.logo-transition {
+  opacity: 100;
+  bottom: 0;
+}
+
 .title-link:hover {
   color: white;
 }
