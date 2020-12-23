@@ -1,15 +1,15 @@
 import React from "react";
-import "../ContactContent/ContactContent.css";
+import "../WorkTitle/WorkTitle.css";
 
-function ContactContent(props) {
+function WorkTitle(props) {
   const { visible } = props;
   return (
     <div className="screen">
       <div className={visible ? "title transition" : "title"}>
-        <h1>Contact Content</h1>
+        <h1>Work Title</h1>
       </div>
     </div>
   );
 }
 
-export default ContactContent;
+export default WorkTitle;
