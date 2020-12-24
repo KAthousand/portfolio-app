@@ -61,7 +61,7 @@ function Resume(props) {
             Completed May 2020.
           </p>
           <a
-            href="https://drive.google.com/file/d/11bYu_mrsz9Y-kmxSTSyPewGgZWzUH384/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KMQD2Y7QqNGsV4kwTrjU5ORyvzsyKOuU/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             alt="link-to-resume"

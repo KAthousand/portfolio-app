@@ -114,7 +114,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .title-container {
     height: 85vh;
   }
