@@ -1,0 +1,8 @@
+.work-container-title,
+.work-container-content {
+  width: 100%;
+}
+
+.work-container-title {
+  background-color: var(--color-dark);
+}

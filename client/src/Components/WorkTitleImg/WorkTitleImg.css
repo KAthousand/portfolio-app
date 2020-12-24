@@ -1,0 +1,19 @@
+.work-title-content {
+  background: url("../../assets/worktitle.png") no-repeat center center;
+  background-size: contain;
+  background-color: var(--color-dark);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -20%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.work-title-transition {
+  top: 0;
+  opacity: 100;
+}
