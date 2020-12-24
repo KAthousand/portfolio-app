@@ -1,0 +1,102 @@
+.nav-container {
+  background-color: transparent;
+  height: 92%;
+  width: 0;
+  position: fixed;
+  top: 5%;
+  right: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: width 0.5s, right 0.5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out, cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  z-index: 1000;
+}
+
+.nav-transition {
+  width: 3vw;
+  right: 2%;
+}
+
+.nav-full {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-dark-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  z-index: 1000;
+}
+
+.open-nav {
+  transform: scaleX(1);
+}
+
+.nav-full-link {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  font-size: 3em;
+  transition: 0.25s;
+}
+
+.open-link {
+  transition-delay: 0.85s;
+  opacity: 1;
+}
+
+.close-link {
+  opacity: 0;
+}
+
+.nav-full-link a:hover {
+  color: var(--color-dark);
+}
+
+.nav-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  font-family: var(--font-header);
+  font-size: 3em;
+  /* border: 5px solid rgb(42, 42, 42); */
+  border: none;
+  border-radius: 5px;
+  /* color: white; */
+  color: var(--color-dark);
+  background-color: white;
+  /* background-color: var(--color-light-orange); */
+  padding: 5px 18px;
+  transition: transform 0.5s, color 0.15s;
+  transition-timing-function: ease-in-out, cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+
+.nav-icon:hover {
+  color: var(--color-light-orange);
+  transform: rotate(90deg);
+  /* background-color: var(--color-light-orange); */
+}
+
+.nav-icon-transition {
+  transform: rotate(225deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-icon-container {
+    display: none;
+  }
+  .nav-transition {
+    right: 5vh;
+  }
+}
