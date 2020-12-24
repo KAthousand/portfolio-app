@@ -61,14 +61,12 @@ body {
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  /* overscroll-behavior: none; */
 }
 
 .container {
   height: 200vh;
   display: flex;
   flex-direction: column;
-  /* overscroll-behavior-y: none; */
 }
 
 .screen {
@@ -77,7 +75,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overscroll-behavior-y: none; */
 }
 
 .hidden {
@@ -114,5 +111,17 @@ html {
   .container {
     height: 100vh;
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title-container {
+    height: 85vh;
+  }
+  .container {
+    height: 170vh;
+  }
+  .screen {
+    height: 85vh;
   }
 }

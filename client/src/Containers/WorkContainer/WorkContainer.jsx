@@ -32,7 +32,7 @@ function WorkContainer(props) {
   }, []);
 
   return (
-    <div className="work container" id="work-container">
+    <div className="container" id="work-container">
       <div className="work-container-title" ref={refA}>
         <WorkTitle visible={visible.title} />
       </div>

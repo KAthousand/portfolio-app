@@ -5,11 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid green; */
 }
 
 .resume-content-container {
-  /* border: 2px solid blue; */
   position: absolute;
   top: 105vh;
   left: 0;
@@ -31,7 +29,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid purple; */
 }
 
 .resume-content h1 {
@@ -86,8 +83,9 @@
   }
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .resume-content-container {
-    height: 65vh;
+    top: 175vh;
+    height: 75%;
   }
-} */
+}
