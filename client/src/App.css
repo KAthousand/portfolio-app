@@ -59,8 +59,8 @@ body {
 }
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
 }
 
 .container {
@@ -71,7 +71,7 @@ html {
 
 .screen {
   height: 100vh;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   display: flex;
   justify-content: center;
   align-items: center;
