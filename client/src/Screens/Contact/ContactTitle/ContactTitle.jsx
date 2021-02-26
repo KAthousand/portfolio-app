@@ -28,7 +28,7 @@ function ContactTitle(props) {
             </a>
           </div>
           <div className="back-to-top">
-            <a href="title">
+            <a href="title_container">
               <h3>Back to Top</h3>
             </a>
           </div>
